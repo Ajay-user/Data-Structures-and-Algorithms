@@ -45,6 +45,7 @@ int searchRecursive(int arr[], int k, int left, int right)
             cout << "looking at location -- " << mid << "\n";
             if(arr[mid]==k){
             result = mid;
+            return result;
             }
             else{
                 if(arr[mid]>k){

@@ -27,10 +27,11 @@ public class BinarySearch {
         while (stop>=start) {
 
             mid = (start + stop) / 2;
-            System.out.println("left_pos " + start + "---looking at pos " + mid + "---right_pos " + stop);
-            if (arr[mid] == searchElem)
+            
+            if (arr[mid] == searchElem){
                 result = mid;
-            else {
+                return result;
+            } else {
                 if (arr[mid] > searchElem) {
                     stop = mid - 1;
                 } else {
@@ -106,7 +107,7 @@ public class BinarySearch {
     public static void main(String[] args) {
         int[] sortedArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         int result;
-        int searchItem = 11;
+        int searchItem = 9;
         int start = 0;
         int stop = sortedArray.length - 1;
 
